@@ -4,6 +4,7 @@
       "package": "com.mediatekvpn.gen.proxy",
       "app_name": "MTK VPN",
       "app_key": "mtkgenuine2026",
+      "enabled": true,
       "account": {
         "username": "testuser",
         "password": "123456",
@@ -16,6 +17,7 @@
       "package": "com.mediatekvpn.gen.proxy.pro",
       "app_name": "MTK VPN PRO",
       "app_key": "mtkgenuine2026_pro",
+      "enabled": false,
       "account": {
         "username": "admin",
         "password": "admin123",
