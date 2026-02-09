@@ -1,8 +1,8 @@
 {
   "apps": [
     {
-      "package": "com.mediatekvpn.gen.proxy",
-      "app_name": "MTK VPN",
+      "package": "com.mediatekvpn.dexter.proxy",
+      "app_name": "MTK",
       "app_key": "mtkgenuine2026",
       "enabled": true,
       "account": {
@@ -14,12 +14,12 @@
       }
     },
     {
-      "package": "com.mediatekvpn.gen.proxy.pro",
-      "app_name": "MTK VPN PRO",
+      "package": "com.mediatekvpn.dexter.proxy.pro",
+      "app_name": "MTK PRO",
       "app_key": "mtkgenuine2026_pro",
-      "enabled": false,
+      "enabled": true,
       "account": {
-        "username": "admin",
+        "username": "prouser",
         "password": "Hx0QERkWFA==",
         "expire": "2027-01-01",
         "device_lock": true,
