@@ -7,7 +7,7 @@
       "enabled": true,
       "account": {
         "username": "testuser",
-        "password": "123456",
+        "password": "GhQXFw0SWw==",
         "expire": "2026-12-31",
         "device_lock": true,
         "device_id": ""
@@ -20,7 +20,7 @@
       "enabled": false,
       "account": {
         "username": "admin",
-        "password": "admin123",
+        "password": "Hx0QERkWFA==",
         "expire": "2027-01-01",
         "device_lock": true,
         "device_id": ""
