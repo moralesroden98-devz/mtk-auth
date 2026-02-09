@@ -1,12 +1,12 @@
 {
   "apps": [
     {
-      "package": "com.mediatekvpn.dexter.proxy",
-      "app_name": "MTK",
+      "package": "app.mtkgenuine.gen.aio",
+      "app_name": "MTK GENUINE GEN",
       "app_key": "mtkgenuine2026",
       "enabled": true,
       "account": {
-        "username": "testuser",
+        "username": "admin",
         "password": "GhQXFw0SWw==",
         "expire": "2026-12-31",
         "device_lock": true,
