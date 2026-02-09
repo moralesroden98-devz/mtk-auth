@@ -1,1 +1,71 @@
-aaa
+package com.mediatekvpn.gen.proxy;
+
+import android.os.Bundle;
+import android.util.Base64;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class EncryptPasswordActivity extends AppCompatActivity {
+
+    EditText edtPlain, edtResult;
+    Button btnEncode, btnDecode;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.encryptiobpassword); // your XML name
+
+        edtPlain = findViewById(R.id.edt_plain);
+        edtResult = findViewById(R.id.edt_result);
+        btnEncode = findViewById(R.id.btn_encode);
+        btnDecode = findViewById(R.id.btn_decode);
+
+        // 🔐 ENCRYPT (Base64)
+        btnEncode.setOnClickListener(v -> {
+            String plain = edtPlain.getText().toString();
+
+            if (plain.isEmpty()) {
+                Toast.makeText(this,
+                        "Enter password first",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            String encoded = Base64.encodeToString(
+                    plain.getBytes(),
+                    Base64.NO_WRAP
+            );
+
+            edtResult.setText(encoded);
+        });
+
+        // 🔓 DECRYPT (Base64)
+        btnDecode.setOnClickListener(v -> {
+            String encoded = edtPlain.getText().toString();
+
+            if (encoded.isEmpty()) {
+                Toast.makeText(this,
+                        "Enter encoded text",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            try {
+                String decoded = new String(
+                        Base64.decode(encoded, Base64.DEFAULT)
+                );
+
+                edtResult.setText(decoded);
+
+            } catch (Exception e) {
+                Toast.makeText(this,
+                        "Invalid Base64 text",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}
+
