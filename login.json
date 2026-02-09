@@ -4,7 +4,7 @@
       "package": "app.mtkgenuine.gen.aio",
       "app_name": "MTK GENUINE GEN",
       "app_key": "mtkgenuine2026",
-      "enabled": true,
+      "enabled": false,
       "account": {
         "username": "admin",
         "password": "DBAGDgtfR1o=",
