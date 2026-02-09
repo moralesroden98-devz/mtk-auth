@@ -1,18 +1,30 @@
 {
-  "app_key": "mtkgenuine2026",
-  "users": [
+  "apps": [
     {
-      "username": "testuser",
-      "password": "123456",
-      "expire": "2026-12-31",
-      "device_lock": false
+      "package": "com.mediatekvpn.gen.proxy",
+      "app_name": "MTK VPN",
+      "app_key": "mtkgenuine2026",
+      "users": [
+        {
+          "username": "testuser",
+          "password": "123456",
+          "expire": "2026-12-31",
+          "device_lock": false
+        }
+      ]
     },
     {
-      "username": "admin",
-      "password": "admin123",
-      "expire": "2027-01-01",
-      "device_lock": true
+      "package": "com.mediatekvpn.gen.proxy.pro",
+      "app_name": "MTK VPN PRO",
+      "app_key": "mtkgenuine2026_pro",
+      "users": [
+        {
+          "username": "admin",
+          "password": "admin123",
+          "expire": "2027-01-01",
+          "device_lock": true
+        }
+      ]
     }
   ]
 }
-
