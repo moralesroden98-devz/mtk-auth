@@ -1,1 +1,18 @@
-a
+{
+  "app_key": "mtkgenuine2026",
+  "users": [
+    {
+      "username": "testuser",
+      "password": "123456",
+      "expire": "2026-12-31",
+      "device_lock": false
+    },
+    {
+      "username": "admin",
+      "password": "admin123",
+      "expire": "2027-01-01",
+      "device_lock": true
+    }
+  ]
+}
+
